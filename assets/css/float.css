@@ -1,0 +1,46 @@
+.navbar ul .nav-item {
+    line-height: 70px;
+    height: 70px !important;
+}
+
+.navbar ul .nav-item a{
+    /* margin: 0; */
+    padding: 0px 0 0px 30px;
+}
+
+
+
+/* 新建一个div 置于浮动最顶层 覆盖整个屏幕*/
+.float {
+    position: fixed;
+    /* 固定定位 */
+    top: 0;
+    /* 距离顶部为0 */
+    left: 0;
+    /* 距离左边为0 */
+    width: 100%;
+    /* 宽度为100% */
+    height: 100%;
+    z-index: 10;
+}
+
+
+/* 绝对布局，子菜单样式 */
+.float .c-p {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+/* 子菜单每一项样式 */
+.float .c-c {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+}
