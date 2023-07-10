@@ -1,0 +1,29 @@
+<html><body>
+
+<img id="image">
+
+<script>
+  //获取当前日期
+  var date = new Date();
+  //获取当前月份
+  var month = date.getMonth() + 1;
+  //获取当前日期
+  var day = date.getDate();
+  //获取图片元素
+  var image = document.getElementById("image");
+  //根据月份和日期选择不同的图片
+  if (month == 1 && day == 1) {
+    //如果是元旦，显示元旦图片
+    image.src = "assets/img/members/xcn.jpg";
+    image.alt = "Happy New Year!";
+  } else if (month == 2 && day == 14) {
+    //如果是情人节，显示情人节图片
+    image.src = "assets/img/members/ykx2.jpg";
+    image.alt = "Happy Valentine's Day!";
+  } else {
+    //其他日期，显示默认图片
+    image.src = "assets/img/members/ykx1.jpg";
+    image.alt = "Have a nice day!";
+  }
+</script>
+</body></html>
