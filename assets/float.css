@@ -22,21 +22,6 @@
     /* 宽度为100% */
     height: 100%;
     z-index: 10;
-    /* 允许鼠标事件穿过此层，到达下面的内容 */
-    pointer-events: none;
-}
-
-/* 允许子菜单中的链接可以被点击 */
-.float .c-p {
-    pointer-events: auto;
-}
-
-.float .c-c {
-    pointer-events: auto;
-}
-
-.float .c-c a {
-    pointer-events: auto;
 }
 
 
